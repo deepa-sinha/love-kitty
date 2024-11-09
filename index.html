@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Love Kitty</title>
+    <script src="https://kit.fontawesome.com/c704a5a22b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <header>
+
+            <div class="left-side">
+
+                <a href="index.html">
+                    <i class="fa-sharp fa-solid fa-cat"> bonkey</i>
+                </a>
+                
+                <div class="divider hide-mobile"></div>
+
+                <a href="#" class="home hide-mobile">Home</a>
+
+            </div>
+
+            <nav >
+
+                <a href="#" class="open-menu hide-desktop">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+
+                <ul>
+                    <li><a href="#" class="menu-close hide-desktop"><i class="fa-sharp-duotone fa-solid fa-xmark"></i></a> </li>
+                    <li><a href="#">Our Food</a> </li>
+                    <li><a href="#">Ingredients</a> </li>
+                    <li><a href="#">Studies</a> </li>
+                    <li><a href="#">FAQ</a> </li>
+                </ul>
+
+            </nav>
+
+            
+
+        </header>
+
+        <main>
+            <h1>Your cat will never give a</br> <span>ShitAboutYou </span></h1>
+
+            <p>Whether it's a brainstorming session where no idea is too "out there," or a moment where you just let loose and laugh at the absurd, "bonkers" is the art of breaking routines, letting go, and embracing the thrill of spontaneity!</p>
+
+            <div class="btn"><button>Get Bonkers</button></div>
+
+        </main>
+
+        <div class="cat-circle">
+
+            <img src="img/kitty_3.png">
+
+            <div class="inner-circle"></div>
+
+            <div class="outer-circle"></div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        const menu = document.querySelector('nav ul');
+        const menuBtn = document.querySelector('.open-menu');
+        const closeBtn = document.querySelector('.menu-close');
+
+        menuBtn.addEventListener ('click', () => {
+            menu.classList.add('open')
+        })
+
+        closeBtn.addEventListener ('click', () => {
+            menu.classList.remove('open')
+        })
+
+    </script>
+    
+</body>
+</html>
